@@ -1,0 +1,43 @@
+:root {
+    /* Fonts */
+    --header-font: 'Saira Semi Condensed', sans-serif;
+    --font: 'Nunito', sans-serif;
+    /* Color Palette */
+    --color-bg: #E8F1E1;        /* Honeydew */
+    --color-text:#36372d;       /* Black Chocolate */
+    --color-accent1: #9DCDC0;   /* Middle Blue Green */
+    --color-accent2: #776871;   /* Old Lavender */
+}
+
+body {
+    background-color: var(--color-bg);
+}
+
+p {
+    color: var(--color-text);
+    font-family: var(--font);
+    margin: 0;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h1, h3, a {
+    font-family: var(--header-font);
+    color: var(--color-text);
+    margin: 0;
+}
+
+header {
+    border-bottom: 2px solid var(--color-accent1);
+}
+
+.card {
+    border: 2px solid var(--color-accent1);
+}
+
+.card-header {
+    background-color: var(--color-accent1);
+    border-radius: 0px !important;
+}
