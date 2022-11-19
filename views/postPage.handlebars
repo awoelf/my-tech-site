@@ -1,0 +1,24 @@
+<div class='container mt-2'>
+  <div class='card shadow-sm'>
+    <div class='card-body p-0'>
+        <div class='card-header d-flex flex-row align-items-center justify-content-between'>
+            <h3>{{post.title}}</h3>
+            <p>Posted by {{post.user.username}} on {{formatDate post.dateCreated}}</p>
+        </div>
+      <p class='card-text p-3'>{{post.content}}</p>
+    </div>
+  </div>
+</div>
+{{#each comments as |comment| }}
+<div class='container mt-2'>
+  <div class='card shadow-sm'>
+    <div class='card-body p-0'>
+      <div class='card-text p-3'>
+        <p>{{comment.content}}</p>
+        <p id='userInfo' class='mt-2 pt-2'>Posted by {{comment.user.username}} on {{formatDate comment.dateCreated}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
+{{> writeComment }}

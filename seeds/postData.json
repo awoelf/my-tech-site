@@ -1,14 +1,14 @@
 [
     {
         "title": "Why you should change your password every year",
-        "description": "It keeps your account secure."
+        "content": "It keeps your account secure."
     },
     {
         "title": "Android or iOS development?",
-        "description": "Neither. Stop using that damn phone!"
+        "content": "Neither. Stop using that damn phone!"
     },
     {
         "title": "How to make an app that doesn't take up battery",
-        "description": "Simply make the app crash the phone, and wipe all the data so it can't be used."
+        "content": "Simply make the app crash the phone, and wipe all the data so it can't be used."
     }
 ]

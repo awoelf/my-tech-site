@@ -1,16 +1,13 @@
 [
     {
-        "name": "Alexis",
         "username": "awoelf",
         "password": "password1"
     },
     {
-        "name": "Jimbo",
         "username": "jimbo123",
         "password": "password2"
     },
     {
-        "name": "Blobby",
         "username": "blobby1",
         "password": "password3"
     }
