@@ -1,4 +1,4 @@
-<div class='container mt-2'>
+<div class='container mt-2 dropdown'>
   <div class='card shadow-sm'>
     <div class='card-body p-0'>
       <div class='card-header d-flex flex-row align-items-center justify-content-between'>
@@ -10,6 +10,7 @@
             <h3>Post Title</h3>
             <input
               type='text'
+              id='postTitle'
               class='form-control mt-1'
               placeholder='Post title'
               aria-label='Post title'
@@ -20,12 +21,13 @@
             <h3>Content</h3>
             <textarea
               class='form-control mt-1'
+              id='postContent'
               placeholder='Content'
               aria-label='Content'
             ></textarea>
           </div>
           <div class='d-grid col-sm-6 col-md-3 mx-auto my-1'>
-            <button class='btn btn-primary'>Create Post</button>
+            <button class='btn btn-primary' id='createPostBtn'>Create Post</button>
           </div>
         </div>     
       </div>

@@ -21,4 +21,9 @@
   </div>
 </div>
 {{/each}}
-{{> writeComment }}
+{{#if userPost}}
+  {{> editPost}}
+{{else}}
+  {{> addComment}}
+  <script src='/js/comment.js'></script>
+{{/if}}

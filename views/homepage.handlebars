@@ -1,13 +1,1 @@
-{{#each posts as |post| }}
-<div class='container mt-2'>
-  <div class='card shadow-sm'>
-    <div class='card-body p-0'>
-        <div class='card-header d-flex flex-row align-items-center justify-content-between'>
-            <h3><a href='/post/{{post.id}}' class='link-primary'>{{post.title}}</a></h3>
-            <p>Posted by {{post.user.username}} on {{formatDate post.dateCreated}}</p>
-        </div>
-      <p class='card-text p-3'>{{post.content}}</p>
-    </div>
-  </div>
-</div>
-{{/each}}
+{{> post postContent=posts}}
