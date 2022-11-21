@@ -1,14 +1,13 @@
 const addComment = async (event) => {
     event.preventDefault();
 
-    console.log(document);
-
     const content = $('#commentContent').val();
+    const post_id = $('div').data('postid');
 
     if (content) {
         const response = await fetch('/api/comment', {
             method: 'POST',
-            body: JSON.stringify({title, content}),
+            body: JSON.stringify({content, post_id}),
             headers: {
                 'Content-Type': 'application/json'
             }

@@ -24,6 +24,6 @@
 {{#if userPost}}
   {{> editPost}}
 {{else}}
-  {{> addComment}}
+  {{> addComment postId=post.id}}
   <script src='/js/comment.js'></script>
 {{/if}}
