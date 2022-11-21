@@ -1,4 +1,4 @@
-<div class='container mt-2'>
+<div class='container mt-2' id='post' data-postid='{{post.id}}'>
   <div class='card shadow-sm'>
     <div class='card-body p-0'>
         <div class='card-header d-flex flex-row align-items-center justify-content-between'>
@@ -23,7 +23,8 @@
 {{/each}}
 {{#if userPost}}
   {{> editPost}}
+  <script src='/js/editPost.js'></script>
 {{else}}
-  {{> addComment postId=post.id}}
+  {{> addComment}}
   <script src='/js/comment.js'></script>
 {{/if}}

@@ -7,7 +7,7 @@
     --color-text:#36372d;       /* Black Chocolate */
     --color-accent1: #9DCDC0;   /* Middle Blue Green */
     --color-accent2: #D59F82;   /* Antique Brass */
-    --color-hover: #909085;     /* Middle Gray */         
+    --color-hover: #c09789;     /* Tuscany */         
 }
 
 body {
@@ -50,7 +50,7 @@ button {
     border-radius: 0px !important;
 }
 
-.link-primary, .nav-link, h1>a {
+.link-primary, .nav-link, a {
     color: var(--color-text) !important;
     transition: 0.5s !important;
 }
@@ -59,7 +59,7 @@ button {
     color: var(--color-hover) !important;
 }
 
-.nav-link:hover, h1>a:hover {
+.nav-link:hover, a:hover {
     color: var(--color-accent1) !important;
 }
 

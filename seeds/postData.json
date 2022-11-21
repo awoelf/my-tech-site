@@ -1,14 +1,10 @@
 [
     {
         "title": "Why you should change your password every year",
-        "content": "It keeps your account secure."
+        "content": "It keeps your account secure. A password manager is a great tool for keeping track of all of your passwords"
     },
     {
         "title": "Android or iOS development?",
-        "content": "Neither. Stop using that damn phone!"
-    },
-    {
-        "title": "How to make an app that doesn't take up battery",
-        "content": "Simply make the app crash the phone, and wipe all the data so it can't be used."
+        "content": "It depends on what type of app you are making, and what audience you are trying to reach. Often times you will develop for both platforms."
     }
 ]
