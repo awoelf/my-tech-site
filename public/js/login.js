@@ -30,13 +30,6 @@ const signupFormHandler = async (event) => {
 	const password = $('#password').val();
 
 	if (username && password) {
-		if (username.length < 3) {
-			alert('Username must be at least 3 characters long.');
-			return;
-		} else if (password.length < 8) {
-			alert('Password must be at least 8 characters long.');
-			return;
-		}
 		const response = await fetch('/api/user', {
 			method: 'POST',
 			body: JSON.stringify({username, password}),
@@ -55,6 +48,36 @@ const signupFormHandler = async (event) => {
 	}
 };
 
-$('#logInBtn').click(loginFormHandler);
+const checkValid = () => {
+	let userValid = false;
+	let passValid = false;
 
+	if ($('#username').val().length >= 3) {
+		userValid = true;
+		$('#userValid').text('✔️');
+	} else {
+		userValid = false;
+		$('#userValid').text('❌');
+	}
+
+	if ($('#password').val().length >= 8) {
+		passValid = true;
+		$('#passValid').text('✔️');
+	} else {
+		passValid = false;
+		$('#passValid').text('❌');
+	}
+
+	if (userValid && passValid) {
+		$('#signUpBtn, #logInBtn').removeAttr('disabled');
+	} else {
+		$('#signUpBtn, #logInBtn').attr('disabled', true);
+	}
+}
+
+$('#logInBtn').click(loginFormHandler);
 $('#signUpBtn').click(signupFormHandler);
+
+// Checks if input is valid
+checkValid();
+document.querySelector('.input-group').addEventListener('input', checkValid);
